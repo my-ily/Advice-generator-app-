@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  /* Primary */
+  --blue-200: hsl(193, 38%, 86%);
+  --green-300: hsl(150, 100%, 66%);
+
+  /* Neutral */
+  --blue-600: hsl(217, 19%, 38%);
+  --blue-900: hsl(217, 19%, 24%);
+  --blue-950: hsl(218, 23%, 16%);
+
+  /* Typography */
+  --font-family: 'Manrope', sans-serif;
+  --font-size-quote: 28px;
+}
+
+/* --- Global --- */
+body {
+  font-family: var(--font-family);
+  background-color: var(--blue-950);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* --- Container --- */
+.container {
+  position: relative;
+  background-color: var(--blue-900);
+  padding: 2.5rem 2rem 4rem;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 500px;
+  min-width: 300px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Title --- */
+.title {
+  color: var(--green-300);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Quote --- */
+.quote {
+  font-size: var(--font-size-quote);
+  color: var(--blue-200);
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+  word-wrap: break-word;
+}
+
+/* Divider image */
+.container > img {
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+  margin: 0 auto 2.5rem;
+  display: block;
+}
+
+/* --- Footer --- */
+.footer {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer img {
+  background-color: var(--green-300);
+  padding: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.footer img:hover {
+  box-shadow: 0 0 20px var(--green-300);
+}
